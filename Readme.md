@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Stanislav Chunikhin](https://up.htmlacademy.ru/htmlcss/16/user/259809).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Одноколова](https://htmlacademy.ru/profile/id38936).
 
 ---
 
