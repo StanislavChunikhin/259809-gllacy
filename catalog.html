@@ -30,30 +30,33 @@
       <div class="bread-crumbs">
         <a href="#">Главная</a>
         <a href="#">Каталог</a>
-        <a>Сливочное</a>
+        <a href="#">Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
+      <fieldset>
         <form action="/echo" method="post" oninput="priceoutput.value=pricecount.value">
-          <label for="sorting">Сортировка:</label>
-            <select id="sorting">
-              <option value="popular" checked>По популярности</option>
-              <option value="price">По цене</option>
-            </select>
-          <label for="Цена:"></label>
-          <input type="range" id="pricecount" min="100" max="1000" step="100" value="100">
-          <output name="priceoutput">100</output>
-          <legend>Жирность:</legend>
-          <label><input type="radio" name="fat" value="0">0%</label>
-          <label><input type="radio" name="fat" value="10" checked>до 10%</label>
-          <label><input type="radio" name="fat" value="30">до 30%</label>           <label><input type="radio" name="fat" value="40">выше 30%</label>
-          <legend>Наполнители:</legend>
-          <label><input type="checkbox">шоколадные</label>
-          <label><input type="checkbox">сахарные присыпки</label>
-          <label><input type="checkbox">фрукты</label>
-          <label><input type="checkbox">сиропы</label>
-          <label><input type="checkbox">джемы</label>
-          <button class="btn">Применить</button>
-        </form>
+        <label for="sorting">Сортировка:</label>
+        <select id="sorting">
+          <option value="popular" checked>По популярности</option>
+          <option value="price">По цене</option>
+        </select>
+        <label for="Цена:"></label>
+        <input type="range" id="pricecount" min="100" max="1000" step="100" value="100">
+        <output name="priceoutput">100</output>
+        <legend>Жирность:</legend>
+        <input type="radio" name="fat" value="0"><label>0%</label></input>
+        <input type="radio" name="fat" value="10" checked><label>до 10%</label></input>
+        <input type="radio" name="fat" value="30"><label>до 30%</label></input>
+        <input type="radio" name="fat" value="40"><label>выше 30%</label></input>
+        <legend>Наполнители:</legend>
+        <input type="checkbox"><label>шоколадные</label></input>
+        <input type="checkbox"><label>сахарные присыпки</label></input>
+        <input type="checkbox"><label>фрукты</label></input>
+        <input type="checkbox"><label>сиропы</label></input>
+        <input type="checkbox"><label>джемы</label></input>
+        <button class="btn">Применить</button>
+      </form>
+      </fieldset>
       <div class="ice-cream-catalog">
         <article class="item-card">
           <img src="http://placehold.it/150x100" alt="icecream" width="150" height="100">
