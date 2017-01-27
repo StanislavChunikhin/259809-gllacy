@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: lightgray;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
