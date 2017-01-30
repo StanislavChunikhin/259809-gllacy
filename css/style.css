@@ -1,5 +1,4 @@
 body {
-  width: 1200px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -7,7 +6,6 @@ body {
   background-color: lightgray;
   font-weight: normal;
   box-sizing: border-box;
-  margin: 10px auto;
 }
 
 h2 {
@@ -20,23 +18,23 @@ h3 {
   font-size: 14px;
   font-weight: normal;
 }
-
-.main-header {
+.container {
+  width: 1146px;
+  margin: 0 auto;
   outline: 1px solid red;
-  width: auto;
 }
-.main-header::after {
+.container::after {
   content: "";
   display: table;
   clear: both;
 }
 .logo {
-  margin-left: -5px;
-  border: 1px solid black;
+  margin-left: -2px;
+  margin-top: 2px;
   float: left;
 }
 .main-navigation ul li{
-  display: inline;
+  display: inline-block;
   list-style: none;
 }
 
@@ -55,13 +53,6 @@ h3 {
   float: right;
   border: 1px solid black;
   margin-top: 30px;
-  padding: px;
-  margin-right: -150px;
-}
-
-.container {
-  width: 1146px;
-  margin: 0 27px;
 }
 .slides p {
   font-size: 60px;
@@ -99,41 +90,31 @@ h3 {
   display: none;
   }
 
-  .special-issue {
-    width: 1146;
-    margin: 0 auto;
+.special-issue {
     background-color: rgba(155, 185, 168, 0.5);
-  }
-  .special-issue::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .special-issue-left {
+}
+.special-issue-left {
     float: left;
     width: 560px;
     height: 229px;
     outline: 1px solid yellow;
-    margin-left: 27px;
   }
 
-  .special-issue-right {
+.special-issue-right {
     float: right;
     width: 560px;
     height: 229px;
     outline: 1px solid yellow;
-    margin-right: 27px;
   }
-  .shop-items {
-    width: 1146px;
-    outline: 2px solid green;
-    margin: 40px auto;
-  }
+.shop-items {
+  font-size: 0;
+}
+
 .shop-items article {
-  display: inline-block;
-  outline: 1px solid purple;
-  width: 267px;
-  margin-right: 22px;
+    display: inline-block;
+    outline: 1px solid purple;
+    width: 267px;
+    margin-right: 22px;
 }
 .shop-items article:last-child {
   margin-right: 0;
@@ -143,18 +124,8 @@ h3 {
   line-height: 45px;
   font-weight: bold;
 }
-
 .index-content {
-  outline: 1px solid blue;
-  width: 1146px;
-  margin: 0 27px;
-  height: 308px;
-}
-
-.index-content::after {
-  content: "";
-  display: table;
-  clear: both;
+  font-size: 0;
 }
 
 .index-content h2 {
@@ -166,36 +137,70 @@ h3 {
 .index-content ul li  {
   list-style: none;
   display: inline-block;
+  vertical-align: top;
+  width: 480px;
+  outline: 1px solid black;
+  margin-left: 35px;
 }
 .index-content ul li p {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
 }
-
-.index-content  ul li:nth-child(1),
-.index-content  ul li:nth-child(2){
-  float: left;
-  outline: 1px solid red;
-  width: 500px
+.index-content ul li:nth-child(odd) {
+  margin-right: 30px;
 }
-
-.index-content  ul li:nth-child(3),
-.index-content  ul li:nth-child(4) {
+.feedback {
   float: right;
+}
+.footer-social, .about-us, .footer-copyright {
+  display: inline-block;
+}
+
+.footer-copyright {
+  float: right;
+}
+
+.about-us {
+  font-size: 0;
+  margin-left: 100px;
   outline: 1px solid black;
-  width: 500px;
+
+}
+.about-us ul {
+  font-size: 13px;
+  line-height: 16px;
+  width: 170px;
+  outline: 1px solid green;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.about-us ul:nth-child(1) {
+  width: 120px;
+}
+.form {
+  width: 879px;
+  outline: 1px solid black;
+  display: inline-block;
+}
+.sort, .price-range, .fat, .flavour {
+  display: inline-block;
+  outline: 1px solid purple;
+}
+.ice-cream-catalog {
+  font-size: 0;
 }
 
-
-.index-content  ul li:nth-child(2) {
-  margin-top: 10px;
-  margin-right: 150px;
+.item-card {
+  display: inline-block;
+  outline: 1px solid purple;
+  width: 267px;
+  margin-right: 22px;
 }
-.index-content  ul li:nth-child(3) {
-  margin-top: -240px;
+.item-card:nth-child(4n) {
+  margin-right: 0;
 }
-
-.index-content  ul li:nth-child(4) {
-  margin-top: -100px;
+.pagination {
+  float: right;
 }
