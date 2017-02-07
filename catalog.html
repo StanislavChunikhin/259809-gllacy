@@ -9,16 +9,26 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="http://placehold.it/150x100" alt="logo" width="150" height="100">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" width="154" height="64">
+        </div>
         <nav class="main-navigation">
           <ul>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Каталог</a>
+              <ul class="catalog_list">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербет</a></li>
+                <li><a href="#">Фруктовый лёд</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
-          <input type="search">
+          <a src="#">Поиск</a>
           <a href="#">Вход</a>
           <a href="#">Пусто</a>
         </div>
@@ -28,26 +38,36 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="container">
       <div class="bread-crumbs">
         <a href="#">Главная</a>
         <a href="#">Каталог</a>
         <a>Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
+      <div class="form">
         <form action="/echo" method="post" oninput="priceoutput.value=pricecount.value">
+          <div class="sort">
           <label for="sorting">Сортировка:</label>
             <select id="sorting">
-              <option value="popular" checked>По популярности</option>
-              <option value="price">По цене</option>
+              <option value="popular" checked>по популярности</option>
+              <option value="cheap-first">сначала недорогие</option>
+              <option value="expencieve-first">сначала дорогие</option>
+              <option value="fat">по жирности</option>
             </select>
+          </div>
+          <div class="price-range">
           <label for="Цена:"></label>
           <input type="range" id="pricecount" min="100" max="1000" step="100" value="100">
           <output name="priceoutput">100</output>
+        </div>
+        <div class="fat">
           <h3>Жирность:<h3>
           <label><input type="radio" name="fat" value="0">0%</label>
           <label><input type="radio" name="fat" value="10" checked>до 10%</label>
           <label><input type="radio" name="fat" value="30">до 30%</label>           <label><input type="radio" name="fat" value="40">выше 30%</label>
+        </div>
+        <div class="flavour">
           <h3>Наполнители:<h3>
           <label><input type="checkbox">шоколадные</label>
           <label><input type="checkbox">сахарные присыпки</label>
@@ -55,7 +75,9 @@
           <label><input type="checkbox">сиропы</label>
           <label><input type="checkbox">джемы</label>
           <button type="submit" class="btn">Применить</button>
+        </div>
         </form>
+      </div>
       <div class="ice-cream-catalog">
         <article class="item-card">
           <img src="img/icecream1.png" alt="icecream" width="267" height="267">
@@ -128,23 +150,25 @@
         <a href="#" class="next">!</a>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
        <section class="footer-social">
-         <a class="social-btn social-btn-tw" href="#">tw</a>
-         <a class="social-btn social-btn-inst" href="#">inst</a>
-         <a class="social-btn social-btn-fb" href="#">fb</a>
-         <a class="social-btn social-btn-vk" href="#">vk</a>
+         <a class="social-btn social-btn-tw" href="#"><img src="img/twitter.png" alt="tw"></a>
+         <a class="social-btn social-btn-inst" href="#"><img src="img/insta.png" alt="inst"></a>
+         <a class="social-btn social-btn-fb" href="#"><img src="img/fb.png" alt="fb"></a>
+         <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" alt="vk"></a>
        </section>
        <section class="about-us">
          <ul>
            <li><a href="#">Для поставщиков</a></li>
            <li><a href="#">О производстве</a></li>
+         </ul>
+         <ul>
            <li><a href="#">Наши документы</a></li>
            <li><a href="#">Экологические стандарты</a></li>
          </ul>
        </section>
        <section class="footer-copyright">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="logo">
+        <img src="img/logo_html.png" width="108" height="38" alt="logo">
          <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> 	&#174; 2016</p>
        </section>
     </footer>
