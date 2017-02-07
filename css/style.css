@@ -3,8 +3,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  background-color: #849d8f;
   font-weight: normal;
+  background-color: #849d8f;
   box-sizing: border-box;
 }
 
@@ -82,6 +82,13 @@ h3 {
    padding: 0;
    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
+.main-menu .abslt {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 89px;
+  height: 70px;
+}
 .sub-menu li:first-child {
   font-weight: bold;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -140,7 +147,7 @@ h3 {
   display: inline-block;
 }
 
-.main-menu .cathover:hover {
+.main-menu li:hover .cathover {
   display: inline-block;
   width: 64px;
   height: 13px;
@@ -164,16 +171,12 @@ h3 {
   border-radius: 50%;
   margin-right: 7px;
 }
-.zoom:hover {
-  background-color: #ffffff;
-  background-image: url("../img/zoom_black.png");
-}
 
 .search-form {
   display: none;
   position: absolute;
-  right: 300px;
-  top: 60px;
+  right: 0px;
+  top: 10px;
   width: 340px;
   height: 84px;
   background-color: #f8f7f4;
@@ -192,14 +195,32 @@ h3 {
 .link-hover {
   display: inline-block;
 }
-.link-hover:hover+.search-form {
+.link-hover:hover .search-form {
   display: block;
+}
+.link-hover:hover .abslt-search {
+  display: block;
+}
+.link-hover:hover .zoom {
+  background-color: #ffffff;
+  background-image: url("../img/zoom_black.png");
+  transition: all 0.5s ease;
+}
+
+.abslt-search {
+  display: none;
+  padding-top: 10px;
+  position:absolute;
+  right: 303px;
+  top: 55px;
+  width: 340px;
+  height: 84px;
 }
 .login-form {
   display: none;
   position: absolute;
-  right: 195px;
-  top: 60px;
+  right: 0px;
+  top: 10px;
   width: 259px;
   height: 194px;
   background-color: #f8f7f4;
@@ -304,10 +325,30 @@ h3 {
   background: transparent url("../img/entrance_black.png") no-repeat;
 }
 .entrance-hover {
+  position: relative;
   display: inline-block;
   vertical-align: bottom;
 }
-.entrance-hover:hover+.login-form {
+.enter-hover {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  width: 279px;
+  height: 214px;
+  right: 8px;
+  top: 33px;
+}
+
+.entrance-hover:hover .enter-hover {
+  display: block;
+}
+.entrance-hover:hover .login-form {
+  display: block;
+}
+.enter-hover:hover {
+  display: block;
+}
+.enter-hover:hover .login-form {
   display: block;
 }
 
@@ -361,21 +402,31 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
   margin-top: -9px;
 
 }
+.slides {
+  display: block;
+}
+
 .slides p {
   font-size: 60px;
   line-height: 62px;
   font-weight: bold;
   width: 700px;
   outline: 2px solid red;
+  background-color: rgba(185, 5, 33, 0.5);
   margin: 0 auto;
   text-align: center;
 }
+
+.slides:nth-child(2), .slides:nth-child(3) {
+  display: none;
+  }
 
 .slides .btn  {
   width: 200px;
   margin: 35px auto;
   outline: 1px solid red;
   text-align: center;
+  background-color: rgba(185, 5, 33, 0.5);
 }
 .slides .btn a {
   font-size: 32px;
@@ -389,13 +440,8 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
   padding-top: 238px;
   width: 748px;
   height: 253px;
-  background-color: rgba(185, 5, 33, 0.5);
   margin: auto;
 }
-
-.slides:nth-child(2), .slides:nth-child(3) {
-  display: none;
-  }
 
 .special-issue {
     background-color: rgba(155, 185, 168, 0.5);

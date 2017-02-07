@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
   <body>
     <header class="main-header">
       <div class="container">
@@ -15,6 +15,7 @@
         <nav class="main-navigation">
           <ul class="main-menu">
             <li><a class="cathover" href="#"><span class="undrl">Каталог</span></a>
+              <div class="abslt">
               <ul class="sub-menu">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
@@ -22,6 +23,7 @@
                 <li><a href="#">Фруктовый лёд</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
+            </div>
             </li>
             <li><a href="#"><span class="undrl">Доставка и оплата</span></a></li>
             <li><a href="#"><span class="undrl">О Компании</span></a></li>
@@ -30,24 +32,28 @@
         <div class="user-block">
           <div class="link-hover">
           <a class="zoom" href="#">Поиск</a>
-        </div>
+          <div class="abslt-search">
           <form class="search-form" action="/echo" method="post">
            <input type="search" name="search" placeholder="Что ищем?">
           </form>
+        </div>
+        </div>
           <div class="entrance-hover">
           <a class="entrance" href="#">Вход</a>
+        <div class="enter-hover">
+        <div class="login-form">
+          <form action="/echo" method="post">
+            <input type="email" placeholder="Электронная почта">
+            <input type="text" placeholder="Пароль">
+            <button type="submit">Войти</button>
+          </form>
+          <div class="links">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </div>
-          <div class="login-form">
-            <form action="/echo" method="post">
-              <input type="email" placeholder="Электронная почта">
-              <input type="text" placeholder="Пароль">
-              <button type="submit">Войти</button>
-            </form>
-            <div class="links">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </div>
-          </div>
+        </div>
+      </div>
+      </div>
           <a class="shopping-bag" href="#">Пусто</a>
         </div>
         <div class="contacts">
