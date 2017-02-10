@@ -286,6 +286,20 @@ h3 {
   padding-left: 14px;
   margin-right: -2.80px;
 }
+.main-navigation .catalog-page {
+  display: inline-block;
+  width: 64px;
+  height: 13px;
+  background-color: #d07058;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-left: 14px;
+  margin-right: -2.80px;
+  border-bottom: none;
+  cursor: pointer;
+}
 .zoom {
   display: inline-block;
   background-image: url("../img/zoom.png");
@@ -623,6 +637,7 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
 .description-item {
   font-size: 16px;
   line-height: 22px;
+  margin: 0 6px;
 }
 .description-item a {
     text-decoration: none;
@@ -640,6 +655,7 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
   top: -9px;
   left: -7px;
   border-radius: 10px;
+  z-index: 20;
 }
 .btn-hover {
   display: none;
@@ -656,7 +672,7 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
 }
 .hover-article:hover .btn-hover {
   display: block;
-  z-index: 10;
+  z-index: 30;
 }
 .hover-article:hover .undrl {
   border-bottom: none;
@@ -981,8 +997,9 @@ background: transparent url("../img/shopping_bag.png") no-repeat;
   line-height: 16px;
   font-weight: bold;
 }
-.ice-cream-catalog {
-  font-size: 0;
+.hover-article:nth-child(12) .description-item {
+  margin-left: 20px;
+  margin-top: 22px;
 }
 
 .pagination {

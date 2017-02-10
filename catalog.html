@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,24 +14,48 @@
           <img src="img/logo.png" alt="logo" width="154" height="64">
         </div>
         <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Каталог</a>
-              <ul class="catalog_list">
+          <ul class="main-menu">
+            <li><a class="cathover catalog-page">Каталог</a>
+              <div class="abslt">
+              <ul class="sub-menu">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербет</a></li>
                 <li><a href="#">Фруктовый лёд</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
+            </div>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
+            <li><a href="#"><span class="undrl">Доставка и оплата</span></a></li>
+            <li><a href="#"><span class="undrl">О Компании</span></a></li>
           </ul>
         </nav>
         <div class="user-block">
-          <a src="#">Поиск</a>
-          <a href="#">Вход</a>
-          <a href="#">Пусто</a>
+          <div class="link-hover">
+          <a class="zoom" href="#">Поиск</a>
+          <div class="abslt-search">
+          <form class="search-form" action="/echo" method="post">
+           <input type="search" name="search" placeholder="Что ищем?">
+          </form>
+        </div>
+        </div>
+          <div class="entrance-hover">
+          <a class="entrance" href="#">Вход</a>
+        <div class="enter-hover">
+        <div class="login-form">
+          <form action="/echo" method="post">
+            <input type="email" placeholder="Электронная почта">
+            <input type="text" placeholder="Пароль">
+            <button type="submit">Войти</button>
+          </form>
+          <div class="links">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
+        </div>
+      </div>
+      </div>
+          <a class="shopping-bag" href="#">Пусто</a>
         </div>
         <div class="contacts">
           <p>С 10 до 20, ежедневно</p>
@@ -78,68 +103,104 @@
         </div>
         </form>
       </div>
-      <div class="ice-cream-catalog">
+      <div class="shop-items">
+        <div class="hover-article">
         <article class="item-card">
           <img src="img/icecream1.png" alt="icecream" width="267" height="267">
-          <div class="price">310<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream2.png" alt="icecream" width="267" height="267">
-          <div class="price">380<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочно-кофейное с кусочками шоколада</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream3.png" alt="icecream" width="267" height="267">
-          <div class="price">355<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream4.png" alt="icecream" width="267" height="267">
-          <div class="price">415<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream5.png" alt="icecream" width="267" height="267">
-          <div class="price">325<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с брусничным джемом</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream6.png" alt="icecream" width="267" height="267">
-          <div class="price">410<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочно-черничное с цельными ягодами черники</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream7.png" alt="icecream" width="267" height="267">
-          <div class="price">375<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream8.png" alt="icecream" width="267" height="267">
-          <div class="price">320<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с шоколадной стружкой</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream9.png" alt="icecream" width="267" height="267">
-          <div class="price">440<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочно-ванильное с кусочками шоколада</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream10.png" alt="icecream" width="267" height="267">
-          <div class="price">435<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с ментоловым сиропом</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream11.png" alt="icecream" width="267" height="267">
-          <div class="price">355<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с кусочками черного шоколада</a></div>
-        </article>
-        <article class="item-card">
-          <img src="img/icecream12.png" alt="icecream" width="267" height="267">
-          <div class="price">420<span>&#8381;</span>/кг</div>
-          <div class="description-item"><a href="#">Сливочное с мятным сиропом</a></div>
+          <div class="price">310 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream2.png" alt="icecream" width="267" height="267">
+          <div class="price">380 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочно-кофейное с кусочками шоколада</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream3.png" alt="icecream" width="267" height="267">
+          <div class="price">355 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочно-клубничное с присыпкой из белого шоколада</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream4.png" alt="icecream" width="267" height="267">
+          <div class="price">415 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное крем-брюле с карамельной подливкой</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream5.png" alt="icecream" width="267" height="267">
+          <div class="price">325 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с брусничным джемом</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream6.png" alt="icecream" width="267" height="267">
+          <div class="price">410 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span="undrl">Сливочно-черничное с цельными ягодами черники</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream7.png" alt="icecream" width="267" height="267">
+          <div class="price">375 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочно-лимонное с карамельной присыпкой</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream8.png" alt="icecream" width="267" height="267">
+          <div class="price">320 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с шоколадной стружкой</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream9.png" alt="icecream" width="267" height="267">
+          <div class="price">440 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочно-ванильное с кусочками шоколада</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream10.png" alt="icecream" width="267" height="267">
+          <div class="price">435 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с ментоловым сиропом</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+      <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream11.png" alt="icecream" width="267" height="267">
+          <div class="price">355 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с кусочками черного шоколада</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+     <div class="hover-article">
+        <article class="item-card">
+          <img src="img/icecream12.png" alt="icecream" width="267" height="267">
+          <div class="price">420 <span>&#8381;</span><span class="weight">/кг</span></div>
+          <div class="description-item"><a href="#"><span class="undrl">Сливочное с мятным сиропом</span></a></div>
+          <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
+        </article>
+      </div>
+    </div>
       <div class="pagination">
         <a class="previous" href="#">!</a>
         <a href="#">1</a>
