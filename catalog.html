@@ -65,8 +65,8 @@
     </header>
     <main class="container">
       <div class="bread-crumbs">
-        <a href="#">Главная</a>
-        <a href="#">Каталог</a>
+        <a class="undrl" href="#">Главная</a>
+        <a class="undrl" href="#">Каталог</a>
         <a>Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
@@ -81,30 +81,45 @@
               <option value="fat">по жирности</option>
             </select>
           </div>
-          <div class="price-range">
-          <label for="Цена:"></label>
-          <input type="range" id="pricecount" min="100" max="1000" step="100" value="100">
-          <output name="priceoutput">100</output>
-        </div>
+          <div class="range-filter">
+              <div class="price-controls">
+                <h3>Цена:</h3>
+                <label class="min-price"><input name="min-price" type="text" value="100">руб.</label>
+                <label class="max-price"><input name="max-price" type="text" value="500">руб.</label>
+              </div>
+              <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
         <div class="fat">
-          <h3>Жирность:<h3>
-          <label><input type="radio" name="fat" value="0">0%</label>
-          <label><input type="radio" name="fat" value="10" checked>до 10%</label>
-          <label><input type="radio" name="fat" value="30">до 30%</label>           <label><input type="radio" name="fat" value="40">выше 30%</label>
+          <h3>Жирность:</h3>
+          <div class="fat-bgrnd">
+          <input id="radio-fat1" type="radio" name="fat" value="0"><label for="radio-fat1">0%</label>
+          <input id="radio-fat2" type="radio" name="fat" value="10" checked><label for="radio-fat2">до 10%</label>
+          <input id="radio-fat3" type="radio" name="fat" value="30"><label for="radio-fat3">до 30%</label>
+          <input id="radio-fat4" type="radio" name="fat" value="40"><label for="radio-fat4">выше 30%</label>
+        </div>
         </div>
         <div class="flavour">
-          <h3>Наполнители:<h3>
-          <label><input type="checkbox">шоколадные</label>
-          <label><input type="checkbox">сахарные присыпки</label>
-          <label><input type="checkbox">фрукты</label>
-          <label><input type="checkbox">сиропы</label>
-          <label><input type="checkbox">джемы</label>
-          <button type="submit" class="btn">Применить</button>
+          <h3>Наполнители:</h3>
+          <div class="flvr-bgrnd">
+          <input id="flvr1" type="checkbox" checked><label for="flvr1">шоколадные</label>
+          <input id="flvr2" type="checkbox" checked><label for="flvr2">сахарные присыпки</label>
+          <input id="flvr3" type="checkbox"><label for="flvr3">фрукты</label>
+          <input id="flvr4" type="checkbox"><label for="flvr4">сиропы</label>
+          <input id="flvr5" type="checkbox"><label for="flvr5">джемы</label>
         </div>
+      </div>
+          <button type="submit" class="form-button">Применить</button>
         </form>
       </div>
       <div class="shop-items">
         <div class="hover-article">
+          <div class="not">
         <article class="item-card">
           <img src="img/icecream1.png" alt="icecream" width="267" height="267">
           <div class="price">310 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -112,7 +127,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream2.png" alt="icecream" width="267" height="267">
           <div class="price">380 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -120,7 +137,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream3.png" alt="icecream" width="267" height="267">
           <div class="price">355 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -128,7 +147,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream4.png" alt="icecream" width="267" height="267">
           <div class="price">415 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -136,7 +157,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream5.png" alt="icecream" width="267" height="267">
           <div class="price">325 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -144,7 +167,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream6.png" alt="icecream" width="267" height="267">
           <div class="price">410 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -152,7 +177,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream7.png" alt="icecream" width="267" height="267">
           <div class="price">375 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -160,7 +187,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream8.png" alt="icecream" width="267" height="267">
           <div class="price">320 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -168,7 +197,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream9.png" alt="icecream" width="267" height="267">
           <div class="price">440 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -176,7 +207,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream10.png" alt="icecream" width="267" height="267">
           <div class="price">435 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -184,7 +217,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
       <div class="hover-article">
+        <div class="not">
         <article class="item-card">
           <img src="img/icecream11.png" alt="icecream" width="267" height="267">
           <div class="price">355 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -192,7 +227,9 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
      <div class="hover-article">
+       <div class="not">
         <article class="item-card">
           <img src="img/icecream12.png" alt="icecream" width="267" height="267">
           <div class="price">420 <span>&#8381;</span><span class="weight">/кг</span></div>
@@ -200,37 +237,40 @@
           <a class="slide-btn special-issue-btn-font btn-hover" href="#">Быстрый просмотр</a>
         </article>
       </div>
+      </div>
     </div>
       <div class="pagination">
-        <a class="previous" href="#">!</a>
-        <a href="#">1</a>
+        <a class="previous" href="#"><</a>
+        <a class="current" href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
-        <a href="#" class="next">!</a>
+        <a href="#" class="next">></a>
+      </div>
+      <div class="split-bar">
       </div>
     </main>
     <footer class="main-footer container">
        <section class="footer-social">
-         <a class="social-btn social-btn-tw" href="#"><img src="img/twitter.png" alt="tw"></a>
-         <a class="social-btn social-btn-inst" href="#"><img src="img/insta.png" alt="inst"></a>
-         <a class="social-btn social-btn-fb" href="#"><img src="img/fb.png" alt="fb"></a>
-         <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" alt="vk"></a>
+         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+         <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+         <a class="social-btn social-btn-vk" href="#">ВК</a>
        </section>
        <section class="about-us">
          <ul>
-           <li><a href="#">Для поставщиков</a></li>
-           <li><a href="#">О производстве</a></li>
+           <li><a class="undrl" href="#">Для поставщиков</a></li>
+           <li><a class="undrl" href="#">О производстве</a></li>
          </ul>
          <ul>
-           <li><a href="#">Наши документы</a></li>
-           <li><a href="#">Экологические стандарты</a></li>
+           <li><a class="undrl" href="#">Наши документы</a></li>
+           <li><a class="undrl" href="#">Экологические стандарты</a></li>
          </ul>
        </section>
        <section class="footer-copyright">
         <img src="img/logo_html.png" width="108" height="38" alt="logo">
-         <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> 	&#174; 2016</p>
+         <p>Сделано в <a class="undrl" href="https://htmlacademy.ru">HTML Academy</a>	&#169; 2017</p>
        </section>
     </footer>
   </body>
