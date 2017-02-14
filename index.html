@@ -49,8 +49,8 @@
         <div class="enter-hover">
         <div class="login-form">
           <form action="/echo" method="post">
-            <input type="email" placeholder="Электронная почта">
-            <input type="text" placeholder="Пароль">
+            <label for="email">Электронная почта</label><input id="email" type="email" placeholder="Электронная почта">
+            <label for="pass">Пароль</label><input id="pass" type="text" placeholder="Пароль">
             <button type="submit">Войти</button>
           </form>
           <div class="links">
@@ -209,6 +209,21 @@
          <p>Сделано в <a class="undrl" href="https://htmlacademy.ru">HTML Academy</a>	&#169; 2017</p>
        </section>
     </footer>
+    <div class="bgrnd-feedback-form">
+    <div class="feedback-form">
+      <h2>Мы обязательно вам ответим</h2>
+      <button class="feedback-button" type="button">Закрыть</button>
+      <form class="feedback-info" action="/echo" method="post">
+        <label for="name">Как вас зовут</label>
+        <input id="name" type="text" placeholder="Как вас зовут">
+        <label for="feedbackemail">Ваша почта для ответа</label>
+        <input id="feedbackemail" type="email" placeholder="Ваша почта для ответа">
+        <label for="comments">Напишите что-нибудь...</label>
+        <textarea rows="10" cols="20" id="comments" type="textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="slide-btn special-issue-btn-font" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   </div>
   </div>
   </body>

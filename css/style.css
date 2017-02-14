@@ -375,24 +375,48 @@ h3 {
 .login-form {
   display: none;
   position: absolute;
-  right: 0px;
-  top: 10px;
-  width: 259px;
-  height: 194px;
+  right: -2px;
+  top: 4px;
+  width: 275px;
+  height: 214px;
   background-color: #f8f7f4;
   z-index: 1;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
+.login-form label {
+  visibility: hidden;
+  display: inline-block;;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+  margin-top: 0px;
+  margin-left: 29px;
+}
+.login-form input:focus label {
+  visibility: visible;
+}
+
 .login-form input {
   width: 226px;
-  height: 38px;
-  margin: 10px;
+  height: 37px;
+  margin: 0px;
+  margin-top: -1px;
+  margin-left: 17px;
   border-radius: 5px;
   font-size: 13px;
   line-height: 24px;
   padding-left: 12px;
+  padding-bottom: 1px;
 }
+.login-form input:focus::-webkit-input-placeholder {color: transparent;}
+.login-form input:focus::-moz-placeholder          {color: transparent;}
+.login-form input:focus:-moz-placeholder           {color: transparent;}
+.login-form input:focus:-ms-input-placeholder      {color: transparent;}
 
 .login-form a {
   font-size: 13px;
@@ -400,7 +424,7 @@ h3 {
   color: #323232;
   display: inline-block;
   float: left;
-  margin-left: 130px;
+  margin-left: 137px;
 }
 .login-form a:first-child {
     margin-top: -46px;
@@ -418,8 +442,8 @@ h3 {
   text-shadow: 0 2px 5px #a0200b;
   display: inline-block;
   background-color: red;
-  margin-top: 10px;
-  margin-left: 9px;
+  margin-top: 20px;
+  margin-left: 16px;
   background: rgba(255, 255, 255, 0.2);
   background-image: linear-gradient(360deg, #e74a35, #f26843);
   border: none;
@@ -1408,4 +1432,133 @@ option {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
+}
+.bgrnd-feedback-form {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+
+.feedback-form {
+  position: fixed;
+  top: 85px;
+  left: 408px;
+  width: 477px;
+  height: 442px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+.feedback-form h2,
+.feedback-form label,
+.feedback-form input {
+  display: inline-block;
+  font-size: 0;
+}
+.feedback-form h2 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 23px;
+}
+.feedback-info label {
+  visibility: visible;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+    margin-top: 0px;
+    margin-left: 29px;
+    margin-bottom: 0;
+}
+.feedback-info input {
+  width: 251px;
+    height: 38px;
+    margin-right: 140px;
+    margin-left: 24px;
+    margin-top: -3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    padding-left: 12px;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+.feedback-info textarea {
+  font-family: 'Roboto', sans-serif;
+  width: 411px;
+    height: 143px;
+    margin-right: 140px;
+    margin-left: 24px;
+    margin-top: -3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    padding-left: 13px;
+    padding-top: 8px;
+    border-radius: 5px;
+}
+
+.feedback-button {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.feedback-button::before,
+.feedback-button::after {
+  content: "";
+  top: 11px;
+  left: 0px;
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 1px;
+}
+
+.feedback-button::before {
+  transform: rotate(45deg);
+}
+
+.feedback-button::after {
+  transform: rotate(-45deg);
+}
+
+.feedback-info .special-issue-btn-font {
+  font-size: 18px;
+    line-height: 24px;
+    float: right;
+    padding: 11px 20px;
+    margin-right: 24px;
+    margin-top: 17px;
+    border: none;
+}
+
+.feedback-info input:focus::-webkit-input-placeholder {color: transparent;}
+.feedback-info input:focus::-moz-placeholder          {color: transparent;}
+.feedback-info input:focus:-moz-placeholder           {color: transparent;}
+.feedback-info input:focus:-ms-input-placeholder      {color: transparent;}
+.feedback-info textarea:focus::-webkit-input-placeholder {color: transparent;}
+.feedback-info textarea:focus::-moz-placeholder          {color: transparent;}
+.feedback-info textarea:focus:-moz-placeholder           {color: transparent;}
+.feedback-info textarea:focus:-ms-input-placeholder      {color: transparent;}
+
+.feedback-info input:focus -webkit-label,
+.feedback-info input:focus -moz-label,
+.feedback-info input:focus -ms-label {
+  visibility: visible;
 }
