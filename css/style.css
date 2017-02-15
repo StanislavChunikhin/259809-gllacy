@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -198,7 +198,9 @@ h3 {
   margin: 0;
   padding: 0;
 }
-
+.main-menu li:nth-child(2):hover .cathover {
+  margin-right: 1px;
+}
 .sub-menu a {
   padding: 0;
   border-bottom: none;
@@ -289,7 +291,7 @@ h3 {
 
 .main-menu li:hover .cathover {
   display: inline-block;
-  width: 64px;
+  min-width: 64px;
   height: 13px;
   background-color: #f7f6f3;
   color: black;
@@ -480,7 +482,8 @@ h3 {
   height: 30px;
   top: 6px;
   left: 15px;
-  background: transparent url("../img/entrance.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -97px -7px;
 }
 .entrance:hover,
 .entrance-hover:hover .entrance {
@@ -495,7 +498,6 @@ h3 {
   color: #000000;
   text-decoration: none;
   border-radius: 20px;
-  transition: all 0.5s ease;
 }
 .entrance:hover::before,
 .entrance-hover:hover .entrance::before {
@@ -505,8 +507,8 @@ h3 {
   height: 30px;
   top: 6px;
   left: 15px;
-  background: transparent url("../img/entrance_black.png") no-repeat;
-  transition: all 0.5s ease;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -132px -7px;
 }
 .entrance-hover {
   position: relative;
@@ -559,7 +561,8 @@ width: 30px;
 height: 30px;
 top: 6px;
 left: 15px;
-background: transparent url("../img/shopping_bag.png") no-repeat;
+background: transparent url("../img/sprite.png") no-repeat;
+background-position: -175px -196px;
 }
 .shopping-bag-catalog {
   font-size: 14px;
@@ -583,7 +586,8 @@ width: 30px;
 height: 30px;
 top: 6px;
 left: 15px;
-background: transparent url("../img/shopping_bag_full.png") no-repeat;
+background: transparent url("../img/sprite.png") no-repeat;
+background-position: -210px -196px;
 }
 
 .user-block {
@@ -620,7 +624,7 @@ background: transparent url("../img/shopping_bag_full.png") no-repeat;
     float: left;
     width: 560px;
     min-height: 229px;
-    background-image: url("../img/rasberry_bgnd.png");
+    background-image: url("../img/rasberry_bgrnd.jpg");
     border-radius: 15px;
   }
 .special-issue-left p {
@@ -658,7 +662,7 @@ background: transparent url("../img/shopping_bag_full.png") no-repeat;
     float: right;
     width: 560px;
     min-height: 229px;
-    background-image: url("../img/chocolate_bgnd.png");
+    background-image: url("../img/chocolate_bgrnd.jpg");
     border-radius: 15px;
   }
 .shop-items {
@@ -809,7 +813,7 @@ background: transparent url("../img/shopping_bag_full.png") no-repeat;
 }
 .blog-news {
   min-height: 222px;
-  background-image: url("../img/news.png");
+  background-image: url("../img/news.jpg");
   background-repeat: no-repeat;
 }
 .blog-news h2 {
@@ -1134,7 +1138,7 @@ background: transparent url("../img/shopping_bag_full.png") no-repeat;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
-  width: 400px;
+  min-width: 400px;
   height: 26px;
   padding-top: 10px;
   padding-left: 16px;
@@ -1303,7 +1307,7 @@ option {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
-  width: 684px;
+  min-width: 684px;
   height: 26px;
   margin-left: 3px;
   padding-top: 10px;
@@ -1394,7 +1398,6 @@ option {
 }
 .pagination {
   float: right;
-  display: inline-block;
   font-size: 16px;
   line-height: 18px;
   height: 35px;
@@ -1458,6 +1461,7 @@ option {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .bgrnd-feedback-form {
+  display: none;
   position: fixed;
   z-index: 30;
   width: 100%;
@@ -1516,7 +1520,7 @@ option {
     border-radius: 5px;
 }
 .feedback-info textarea {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   width: 411px;
     height: 143px;
     margin-right: 140px;
@@ -1713,4 +1717,8 @@ padding: 11px 11px;
 
 .shopping-bag-items:hover .shopping-bag-items-hover {
   display: block;
+}
+
+.margin {
+  margin-bottom: 0;
 }
