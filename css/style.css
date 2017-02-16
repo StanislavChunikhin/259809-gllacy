@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -201,6 +201,19 @@ h3 {
 .main-menu li:nth-child(2):hover .cathover {
   margin-right: 1px;
 }
+@-moz-document url-prefix() {
+.main-menu li:nth-child(2):hover .cathover {
+   margin-right: -4px;
+}
+}
+<!--[if IE ]>
+<style>
+.main-menu li:nth-child(2):hover .cathover {
+   margin-right: -4px;
+}
+</style>
+ <![endif]-->
+
 .sub-menu a {
   padding: 0;
   border-bottom: none;
@@ -374,6 +387,8 @@ h3 {
   width: 340px;
   height: 84px;
 }
+
+
 .login-form {
   display: none;
   position: absolute;
@@ -599,21 +614,24 @@ background-position: -210px -196px;
   display: inline-block;
   position: absolute;
   right: -10px;
-  top: 51px;
+  top: 67px;
 }
-.contacts p:first-child {
+.contacts p {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
   padding-left: 41px;
+  margin: 0;
+  margin-bottom: 3px;
 }
-.contacts p:last-child {
+.contacts a {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
   padding-left: 25px;
   margin-top: -9px;
-
+  text-decoration: none;
+  color: white;
 }
 
 .special-issue {
@@ -697,6 +715,17 @@ background-position: -210px -196px;
   font-weight: bold;
   text-shadow: 1px 1px 3px #313235;
 }
+.price .rur {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 31px;
+  height: 36px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+  background-image: url(../img/RUR.png);
+}
 .weight {
   font-size: 28px;
 }
@@ -716,11 +745,11 @@ background-position: -210px -196px;
   display: none;
   content: "";
   position: absolute;
-  width: 280px;
-  min-height: 416px;
+  width: 290px;
+  min-height: 407px;
   background-color: rgba(255, 255, 255, 0.2);
   top: -9px;
-  left: -7px;
+  left: -11px;
   border-radius: 10px;
   z-index: 20;
 }
@@ -728,7 +757,7 @@ background-position: -210px -196px;
   display: none;
   position: absolute;
   left: 26px;
-  bottom: -64px;
+  bottom: -53px;
 }
 .hover-article:hover .item-card::after {
   display: block;
@@ -914,10 +943,13 @@ background-position: -210px -196px;
     margin-right: 26px;
     padding: 11px 27px;
 }
-.feedback .phone b {
+.feedback .phone a {
   display: inline-block;
   font-size: 18px;
   line-height: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #323232;
 }
 
 .contact {
@@ -1087,7 +1119,6 @@ background-position: -210px -196px;
 }
 
 .form {
-  width: 879px;
   display: inline-block;
   font-size: 0;
   margin-bottom: 40px;
@@ -1122,8 +1153,24 @@ background-position: -210px -196px;
     color: white;
     font-size: 16px;
     line-height: 18px;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+appearance: none;
+border: none;
+background-image: url("../img/marker.png");
+background-repeat: no-repeat;
+background-position: 171px center;
 }
+
+::-ms-expand {
+display: none;
+}
+
 .sort select:hover {
+  background-image: url("../img/marker_black.png");
+  background-repeat: no-repeat;
+  background-position: 171px center;
   background-color: rgba(255, 255, 255, 1);
   color: black;
 }
@@ -1271,7 +1318,6 @@ option {
   font-size: 14px;
   line-height: 16px;
   display: inline-block;
-  width: 28%;
 }
 .price-controls {
   width: 216px;
@@ -1283,7 +1329,7 @@ option {
   margin-top: -14px;
 }
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -1520,7 +1566,7 @@ option {
     border-radius: 5px;
 }
 .feedback-info textarea {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   width: 411px;
     height: 143px;
     margin-right: 140px;
