@@ -198,21 +198,15 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
+  .main-menu li:nth-child(2):hover .cathover {
+    margin-right: 1px;
+}
+
 .main-menu li:nth-child(2):hover .cathover {
-  margin-right: 1px;
+  -moz-margin-end: -4px;
+  -ms-margin-end: -4px;
 }
-@-moz-document url-prefix() {
-.main-menu li:nth-child(2):hover .cathover {
-   margin-right: -4px;
-}
-}
-<!--[if IE ]>
-<style>
-.main-menu li:nth-child(2):hover .cathover {
-   margin-right: -4px;
-}
-</style>
- <![endif]-->
 
 .sub-menu a {
   padding: 0;
@@ -258,7 +252,7 @@ h3 {
   display: block;
 }
 .main-menu .sub-menu a {
-  width: 122px;
+  width: 113px;
   display: block;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -895,6 +889,11 @@ background-position: -210px -196px;
     padding-left: 14px;
     font-size: 16px;
 }
+.bgrnd-form input:focus::-webkit-input-placeholder {color: transparent;}
+.bgrnd-form input:focus::-moz-placeholder          {color: transparent;}
+.bgrnd-form input:focus:-moz-placeholder           {color: transparent;}
+.bgrnd-form input:focus:-ms-input-placeholder      {color: transparent;}
+
 .btn-form {
   border: none;
   font-size: 18px;
