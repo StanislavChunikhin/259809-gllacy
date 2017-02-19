@@ -1211,6 +1211,7 @@ h3 {
 iframe {
   width: 100%;
   height: 430px;
+  border-width: 0px;
 }
 
 .footer-social, .about-us, .footer-copyright {
