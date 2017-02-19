@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/min-style.css">
   </head>
   <body>
@@ -170,7 +170,10 @@
                 <div class="bgrnd-form">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                   <form action="/echo" method="post">
-                    <input type="email" placeholder="Электронная почта">
+                    <div class="subscribe-form-label-wrap">
+                      <input id="subscribe-email" type="email" required>
+                      <label for="subscribe-email">Электронная почта</label>
+                    </div>
                     <button class="slide-btn btn-form" type="submit">Отправить</button>
                   </form>
                 </div>

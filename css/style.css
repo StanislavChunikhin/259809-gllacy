@@ -1075,20 +1075,60 @@ h3 {
   border: 1px solid #d3d3d2;
 }
 
-.bgrnd-form input:focus::-webkit-input-placeholder {
-  color: transparent;
+.subscribe-form-label-wrap {
+  position: relative;
+  display: inline-block;
+}
+.subscribe-form-label-wrap label{
+  position: absolute;
+  left: 33px;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
 }
 
-.bgrnd-form input:focus::-moz-placeholder {
-  color: transparent;
+.subscribe-form-label-wrap input:focus {
+  box-shadow: 0 0 0 2px #5b9ddf;
 }
 
-.bgrnd-form input:focus:-moz-placeholder {
-  color: transparent;
+.subscribe-form-label-wrap input:focus ~ label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+  top: 3px;
 }
 
-.bgrnd-form input:focus:-ms-input-placeholder {
-  color: transparent;
+.subscribe-form-label-wrap input:valid ~ label {
+  color: #999999;
+  top: 3px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.subscribe-form-label-wrap input:hover {
+  box-shadow: 0 0 0 1px #d3d3d2;
+}
+
+.subscribe-form-label-wrap input {
+  width: 251px;
+  height: 38px;
+  margin-left: 24px;
+  margin-top: 21px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  padding-left: 12px;
+  padding-top: 2px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  color: black;
+  font-weight: bold;
 }
 
 .btn-form {
@@ -2004,12 +2044,6 @@ option {
   margin-right: 24px;
   margin-top: 17px;
   border: none;
-}
-
-.feedback-info input:focus -webkit-label,
-.feedback-info input:focus -moz-label,
-.feedback-info input:focus -ms-label {
-  visibility: visible;
 }
 
 .shopping-bag-items {
